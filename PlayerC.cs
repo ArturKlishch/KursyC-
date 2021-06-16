@@ -24,9 +24,10 @@ public class PlayerC : MonoBehaviour
                 {
                     if (target.tag == "Enemy")
                     {
+
+                        target.GetComponent<Interactable>().setAsAttackTarget();
                         isApproachingTarget = true;
                         Move(true);
-                        target.GetComponent<Interactable>().setAsAttackTarget();
 
                     }
                     else if (target.tag == "Item" || target.tag == "NPC" || target.tag == "skrzynia")

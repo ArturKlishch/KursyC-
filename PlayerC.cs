@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using UnityEngine.SceneManagement;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.EventSystems;
 using GameAnalyticsSDK;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class PlayerC : MonoBehaviour 
 {

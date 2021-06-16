@@ -1,9 +1,9 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using GameAnalyticsSDK;
-using UnityEngine.SceneManagement;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class PlayerC : MonoBehaviour 
 {
@@ -24,9 +24,10 @@ public class PlayerC : MonoBehaviour
                 {
                     if (target.tag == "Enemy")
                     {
+
+                        target.GetComponent<Interactable>().setAsAttackTarget();
                         isApproachingTarget = true;
                         Move(true);
-                        target.GetComponent<Interactable>().setAsAttackTarget();
 
                     }
                     else if (target.tag == "Item" || target.tag == "NPC" || target.tag == "skrzynia")

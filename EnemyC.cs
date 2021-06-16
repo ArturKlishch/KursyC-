@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class EnemyC : Interactable
 {
-    public bool isAlive = true;
-    public bool isAttacking = false;
-    private Animator anim;
     public ItemPickUp itemDrop;
     private PlayerController target;
     private EnemyMovement movement;
+    public bool isAlive = true;
+    public bool isAttacking = false;
+    private Animator anim;
     private CapsuleCollider collider;
     public Stats stats;
     public List<Item> DropList;
